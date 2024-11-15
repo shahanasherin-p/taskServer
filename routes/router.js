@@ -18,6 +18,6 @@ router.put('/tasks/:id/edit-task',jwtMiddleware,taskController.updateTaskControl
 
 router.delete('/tasks/:id/delete-task',jwtMiddleware,taskController.deleteTaskController)
 
-router.get('/tasks/:id', jwtMiddleware, getTaskById);
+router.get('/tasks/:id', jwtMiddleware,taskController.getTaskById);
 
 module.exports = router
